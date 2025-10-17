@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Part page</title>
+  <link rel="stylesheet" href="updatePartStyles.css">
+  <script src="updatePart.js"></script>
+</head>
+
+<body>
+
+  <header id="HeaderCreatePart">
+
+    <img src="../Images/solarway logo.png" alt="" class="UpdateJobLogo" width="100" height="100">
+
+    <div class="CreatePart_nav">
+
+      <a href="#"> Home </a>
+
+      <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+        <button class="dropbtn">Create</button>
+
+        <div class="dropdown-content">
+
+          <a href="../TechnicianJob/CreateJob.html">Job</a>
+          <a href="../TechnicianPart/createPart.html">Part</a>
+          <a href="../TechnicianRepair_Part/createRepairPart.html">Repair Part</a>
+        </div>
+
+      </div>
+
+      <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+
+        <button class="dropbtn">Update</button>
+
+        <div class="dropdown-content">
+
+          <a href="../TechnicianRepair/UpdateRepair.html">Repair</a>
+          <a href="../TechnicianJob/UpdateJob.html">Job</a>
+          <a href="../TechnicianPart/updatePart.html">Part</a>
+
+        </div>
+
+      </div>
+      <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+
+        <button class="dropbtn">View</button>
+
+        <div class="dropdown-content">
+
+          <a href="../TechnicianRepair/ViewRepair.html">Repair</a>
+          <a href="../TechnicianJob/ViewJob.html">Job</a>
+          <a href="../TechnicianPart/ViewPart.html">Part</a>
+
+        </div>
+
+      </div>
+      <!-- <a href="../Reports/reports.html">Reports</a> -->
+
+    </div>
+
+    <div class="logoutIcon">
+      <a href="/Login/LoginPage.html">
+        <img src="../Images/icons8-logout-32-white.png">
+      </a>
+    </div>
+
+  </header>
+
+  <div id="CreatePart_heading">
+    <h1> Update Part </h1>
+  </div>
+
+
+  <div class="ContainerForm" style="background:rgb(225, 225, 225, 0.25) ;">
+
+    <form class="form">
+
+
+
+      <div class="InputBox">
+        <span class="upartID_input"> Part </span>
+        <select id="upartID_input"></select>
+      </div>
+
+      <div class="InputBox">
+        <span class="uQuantity"> Quantity</span>
+        <input type="number" id="uQuantity" name="numberInput" min="1" max="100" step="1">
+
+      </div>
+
+      <div class="InputBox">
+        <button id="updateunitButton" type="submit"> Submit</button>
+      </div>
+
+    </form>
+
+
+  </div>
+  <footer>
+    <img src="../Images/logo-white.png" width="60px" height="60px">
+</footer>
+
+</body>
+
+</html>

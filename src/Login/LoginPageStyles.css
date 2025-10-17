@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif; /* Using a modern, clean font */
+}
+
+body {
+  background-color: #f4f4f4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  background-image: url('../CreateRepair/Images/Background-img 2.jpg');
+}
+
+.ContainerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 60px; /* Slightly increased top margin */
+  padding: 40px; /* Increased padding for breathing space */
+  background: rgba(255, 255, 255, 0.2); /* More translucent for glassmorphism */
+  backdrop-filter: blur(15px); /* Stronger blur effect */
+  border-radius: 20px; /* More rounded corners for modern feel */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow for floating look */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for depth */
+}
+
+.loginHeading {
+  text-align: center;
+  margin-bottom: 50px; /* Added space below heading */
+}
+
+.headingWord {
+  display: block;
+  margin: 0 3px;
+  color: #fff;
+  font-size: 3rem; /* Larger, bold font */
+  font-weight: 700;
+  letter-spacing: 2px; /* Increased letter spacing for a clean look */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Stronger text shadow for contrast */
+}
+
+.form {
+  width: 100%;
+}
+
+.InputBox {
+  width: 100%;
+  margin-bottom: 25px; /* Increased space between input fields */
+}
+
+.InputBox span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff; /* White label text to contrast the background */
+  font-size: 1.1rem;
+}
+
+.InputBox input[type="text"],
+.InputBox select,
+.InputBox input[type="date"] {
+  width: 100%;
+  padding: 15px; /* Increased padding for bigger input fields */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Translucent border for modern look */
+  border-radius: 10px; /* More rounded corners */
+  background: rgba(255, 255, 255, 0.25); /* Semi-translucent background */
+  font-size: 16px;
+  color: #fff; /* White text for contrast */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.InputBox input[type="text"]::placeholder,
+.InputBox select::placeholder,
+.InputBox input[type="date"]::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Translucent placeholder text */
+}
+
+.InputBox input[type="text"]:focus,
+.InputBox select:focus,
+.InputBox input[type="date"]:focus {
+  border-color:  #BDD31899; /* Fresh green border on focus */
+  box-shadow: 0 0 5px rgba(0, 255, 42, 0.5);; /* Green glow on focus */
+  outline: none;
+}
+
+.InputBox button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px; /* Rounded button for consistency */
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.4s ease, box-shadow 0.3s ease;
+  text-transform: uppercase; /* Uppercase button text for emphasis */
+}
+
+.InputBox button:hover {
+  background-color:#BDD318; /* Bright green on hover */
+  color: #000; /* Black text on hover for contrast */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Improve button focus state for accessibility */
+.InputBox button:focus {
+  outline: none;
+  box-shadow:  0 0 5px rgba(0, 255, 42, 0.5);; /* Green focus glow */
+}

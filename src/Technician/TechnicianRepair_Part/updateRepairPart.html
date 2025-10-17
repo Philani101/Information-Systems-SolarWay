@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Repair Part page</title>
+    <link rel="stylesheet" href="updateRepairPartStyles.css">
+    <script src="#"></script>
+</head>
+<body>
+    
+    <header id="HeaderUpdateRepairPart">
+
+      <img src="../Images/solarway logo.png" alt="" class="UpdateRepairPartLogo" width="100" height="100">
+
+      <div class="UpdateRepairPart_nav">
+
+          <a href="#"> Home </a>
+
+          <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+            <button class="dropbtn">Create</button>
+
+            <div class="dropdown-content">
+
+              <a href="../Job/CreateJob.html">Job</a>
+              <a href="../Part/createPart.html">Part</a>
+              <a href="../RepairPart/createRepairPart.html">Repair Part</a>
+            </div>
+
+        </div>
+
+          <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+
+            <button class="dropbtn">Update</button>
+            
+            <div class="dropdown-content">
+
+              <a href="../UpdateRepair/UpdateRepair.html">Repair</a>
+              <a href="../Job/UpdateJob.html">Job</a>
+              <a href="../Part/updatePart.html">Part</a>
+              <a href="../RepairPart/updateRepairPart.html">Repair Part</a>
+              
+            </div>
+            
+          </div>
+          <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+
+            <button class="dropbtn">View</button>
+            
+            <div class="dropdown-content">
+
+              <a href="#">Repair</a>
+              <a href="#">Job</a>
+              <a href="#">Part</a>
+              <a href="../RepairPart/viewRepairPart.html">Repair Part</a>
+              <a href="#">Staff</a>
+              
+            </div>
+            
+          </div>
+            <!-- <a href="../Reports/reports.html">Reports</a> -->
+
+      </div>
+
+      <div class="logoutIcon">
+        <a href="../Login/LoginPage.html">
+          <img src="../Images/icons8-logout-32-white.png">
+        </a>
+      </div>
+
+    </header>    
+
+    <div id="UpdateRepairPart_heading">
+        <h1> Update Repair Part </h1>
+    </div>
+
+
+    <div class="ContainerForm" style="background:rgb(225, 225, 225, 0.25) ;">
+
+        <form class="form">
+ 
+          <div class="InputBox">
+            <span class="RepairPartID_input"> Repair Part ID</span>
+            <select id="RepairPartID"></select>
+          </div>
+
+            <div class="InputBox">
+                <span class="RepaiirID_input"> Repair ID</span>
+                <select id="RepaiirID"></select>
+            </div>
+
+            <div class="InputBox">
+                <span class="PartID_input"> Part ID</span>
+                <select id="PartID"></select>
+            </div>
+
+            <div class="InputBox">
+                <button id="UpdateRepairPartbtnSubmit" type="submit"> Submit</button>
+            </div>
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>

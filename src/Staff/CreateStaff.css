@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    background-image: url('../CreateRepair/Images/Background-img 2.jpg');
+}
+
+#HeaderStaff {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin: 20px 20px;
+}
+
+.InhouseLogo {
+    height: 80px;
+    width: auto;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.CreateStaff_nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+    border-radius: 5px;
+}
+
+.CreateStaff_nav a:hover {
+    color: #BDD318;
+}
+
+#Inhouse_heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+.ContainerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    width: 100%;
+}
+
+.InputBox {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.InputBox span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.InputBox input[type="text"],
+.InputBox select,
+.InputBox input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.InputBox input[type="text"]:focus,
+.InputBox select:focus,
+.InputBox input[type="date"]:focus {
+    border-color: #BDD318;
+    box-shadow: 0 0 5px rgba(0, 255, 42, 0.5);
+}
+
+.InputBox button {
+    background-color: black;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.InputBox button:hover {
+    background-color: #BDD318;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+footer {
+    height: 60px;
+    bottom: 0;
+    position: fixed;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #BDD318;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #BDD318;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Part page</title>
+    <link rel="stylesheet" href="viewPartStyles.css">
+    <script src="viewPart.js"></script>
+    
+</head>
+<body>
+    
+    <header id="HeaderViewPart">
+
+        <img src="../CreateRepair/Images/solarway logo.png" alt="" class="ViewPartLogo" width="100" height="100">
+
+        <div class="ViewPart_nav">
+
+            <a href="../Home/Home-1.html"> Home </a>
+
+            <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+                <button class="dropbtn">Create</button>
+
+                <div class="dropdown-content">
+
+                  <a href="../CreateRepair/CreateRepair_page.html">Repair</a>
+                  <a href="../Job/CreateJob.html">Job</a>
+                  <a href="../Unit/createUnit.html">Unit</a>
+                  <a href="../Part/createPart.html">Part</a>
+                  <a href="../RepairPart/createRepairPart.html">Repair Part</a>
+                  <a href="../Customer/CreateCustomer.html">Customer</a>
+                  <a href="../ManufactureFile/CreateManufacture.html">Manufacturer</a>
+                  <a href="../Staff/CreateStaff.html">Staff</a>
+                </div>
+
+            </div>
+
+              <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+
+                <button class="dropbtn">Update</button>
+                
+                <div class="dropdown-content">
+
+                  <a href="../UpdateRepair/UpdateRepair.html">Repair</a>
+                  <a href="../Job/UpdateJob.html">Job</a>
+                  <a href="../Unit/updateUnit.html">Unit</a>
+                  <a href="../Part/updatePart.html">Part</a>
+                  <a href="../RepairPart/updateRepairPart.html">Repair Part</a>
+                  <a href="../Customer/UpdateCustomer.html">Customer</a>
+                  <a href="../ManufactureFile/UpdateManufacture.html">Manufacturer</a>
+                  <a href="../Staff/UpdateStaff.html">Staff</a>
+                  
+                </div>
+                
+              </div>
+              <div class="dropdown"> <!--this is the content you find when you click on the header navigations-->
+
+                <button class="dropbtn">View</button>
+                
+                <div class="dropdown-content">
+
+                  <a href="../CreateRepair/ViewRepair.html">Repair</a>
+                  <a href="../Job/ViewJob.html">Job</a>
+                  <a href="../Unit/ViewUnit.html">Unit</a>
+                  <a href="../Part/ViewPart.html">Part</a>
+                  <a href="../RepairPart/viewRepairPart.html">Repair Part</a>
+                  <a href="../Customer/ViewCustomer.html">Customer</a>
+                  <a href="../ManufactureFile/ViewManufacturer.html">Manufacturer</a>
+                  <a href="../Staff/ViewStaff.html">Staff</a>
+                  
+                </div>
+                
+              </div>
+              
+              <a href="../Reports/reports.html">Reports</a>
+
+              </div>
+              <div class="logoutIcon">
+                <a href="../Login/LoginPage.html">
+                  <img src="../Icon/icons8-logout-32-white.png">
+                </a>
+              </div>
+
+    </header>    
+
+    <div id="ViewPart_heading">
+        <h1> View Part </h1>
+    </div>
+
+
+    <div class="ContainerForm" style="background:rgb(255, 255, 255,0.25) ;">
+
+        <form class="form">
+          <!-- <div class="searchContainer"> -->
+            <!-- <div class="InputBox">
+              <span class="PartID"> Part ID </span>
+              <select id="PartID"></select>
+            </div> -->
+            <!-- <div class="InputBox">
+              <button id="viewPartbtn" > View</button>
+            </div> -->
+          <!-- </div> -->
+         
+          <div class="InputBox">
+            <span class="PartID"> Part Name </span>
+              <select id="PartID"></select>
+          </div>
+
+          <div class="InputBox">
+            <span class="Quantity"> Quantity</span>
+            <!-- <label id="Quantity">Quantity display</label> -->
+            <input id="Quantity" type="text">
+          </div>
+
+        </form>
+
+
+    </div>
+    <footer>
+      <img src="../CreateRepair/Images/logo-white.png" width="60px" height="60px">
+  </footer>
+
+</body>
+</html>

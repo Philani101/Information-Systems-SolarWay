@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  background-image: url('../CreateRepair/Images/Background-img\ 2.jpg');
+}
+
+body .ContainerForm{
+  align-self: center;
+}
+
+table{
+  width: 50%;
+  border-collapse:collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+caption{
+  font-weight: bold;
+  color: black;
+}
+th, td {
+  border: 2px solid #333;
+  padding: 8px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+th {
+  background-color: #e2dede;
+  color: black;
+}
+
+
+#HeaderViewPart{
+  background-color: #333;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  margin: 20px 20px;
+}
+
+#HeaderViewPart .ViewPartLogo{
+
+  height: 80px; /* Adjust height to fit better with the header */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 100%; /* Makes the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ViewPart_nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.ViewPart_nav a:hover {
+  color: #BDD318;
+}
+
+#ViewPart_heading {
+  text-align: center;
+  margin: 40px 0;
+  color: #f4f4f4;
+}
+
+/* Container for the form */
+.ContainerForm {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Maximum width to keep the form from stretching too wide */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Padding around the container */
+  background: #fff; /* White background for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Style for the form */
+.form {
+  width: 100%; /* Full width of the container */
+}
+
+/* Style for each input box */
+.InputBox {
+  width: 100%;
+  margin-bottom: 15px; /* Space between input boxes */
+}
+
+/* Style for input labels */
+.InputBox span {
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold;
+  color: black;
+}
+label:hover{
+  outline: #BDD318 solid 1px;
+}
+.searchContainer{
+  display: grid;
+  grid-template-columns: 110px 1fr;   /* Two columns: label (fixed), input (flexible) */
+  align-items: center;                /* Vertically aligns label and input */
+  margin-bottom: 15px;
+ 
+}
+
+
+/* Style for text inputs, selects, dates, and number inputs */
+.InputBox input[type="text"],
+.InputBox select,label,
+.InputBox input[type="number"] { /* Added number input */
+  display: inline-block;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.logoutIcon{
+  position: absolute;
+  left: 93%;
+}
+/* Focus state for text inputs, selects, dates, and number inputs */
+.InputBox input[type="text"]:focus,
+.InputBox select:focus,
+.InputBox input[type="number"]:focus { /* Added focus state for number input */
+  border-color: #BDD318;
+  box-shadow: 0 0 5px rgba(0, 255, 42, 0.5);
+  outline: #BDD318 solid 1px;
+  
+}
+/* Style for the submit button */
+.InputBox button {
+  background-color:black;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 5px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover state for the submit button */
+.InputBox button:hover {
+  background-color: #BDD318;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color:black;
+}
+
+/* Push footer-div to bottom of page*/
+footer{
+  height: 60px;
+  bottom: 0;
+  position: fixed;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #BDD318;
+  color: #333;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #BDD318;}
+
+
